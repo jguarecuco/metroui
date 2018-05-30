@@ -1,6 +1,6 @@
 Package.describe({
   name: 'jguarecuco:metroui',
-  version: '1.0.3',
+  version: '1.0.4',
   // Brief, one-line summary of the package.
   summary: 'Integración de MetroUi version 4',
   // URL to the Git repository containing the source code for this package.
@@ -14,7 +14,7 @@ Package.onUse(function(api) {
   api.versionsFrom('1.6.1.1');
   api.use('ecmascript');
   api.mainModule('metroui.js');
-  api.addFiles(['metro.min.css', 'metro.js']);
+  api.addFiles(['metro.min.css', 'metro.js'], 'client');
 });
 
 Package.onTest(function(api) {
