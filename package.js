@@ -1,10 +1,10 @@
 Package.describe({
   name: 'jguarecuco:metroui',
-  version: '0.0.1',
+  version: '1.0.3',
   // Brief, one-line summary of the package.
-  summary: '',
+  summary: 'Integración de MetroUi version 4',
   // URL to the Git repository containing the source code for this package.
-  git: '',
+  git: 'https://github.com/jguarecuco/metroui.git',
   // By default, Meteor will default to using README.md for documentation.
   // To avoid submitting documentation, set this field to null.
   documentation: 'README.md'
@@ -14,6 +14,7 @@ Package.onUse(function(api) {
   api.versionsFrom('1.6.1.1');
   api.use('ecmascript');
   api.mainModule('metroui.js');
+  api.addFiles(['metro.min.css', 'metro.js']);
 });
 
 Package.onTest(function(api) {
